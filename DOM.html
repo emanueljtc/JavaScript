@@ -6,6 +6,7 @@
   </head>
   <body>
       <h1 id="titulo">Document Object Model</h1>
+      <div id="subtitulo"></div>
       <p>1. - Lorem ipsum <b>dolor</b> sit amet, consectetur adipisicing elit,
         sed do eiusmod tempor incididunt ut labore et dolore magna
         aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -23,8 +24,21 @@
       ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
       <script>
-          var elementosP = document.getElementsByTagName("p")
-          var segundoParrafo = document.getElementById("segundo");
+          // var elementosP = document.getElementsByTagName("p")
+          // var segundoParrafo = document.getElementById("segundo");
+
+          //AGREGAR NODOS AL DOCUMENTO
+          //1- Crear el elemento
+          var elemento = document.createElement("h2");
+          //2- Crear un nodo de texto
+          var contenido = document.createTextNode(prompt("Ingrese Texto"));
+          //3- Añadir el nodo texto al elemento
+          elemento.appendChild(contenido);
+          //4- Agregar atributos al elemento
+          elemento.setAttribute("aling", "center");
+          //5- Agregar el elemento al documento
+          document.getElementById("subtitulo").appendChild(elemento);
+
       </script>
   </body>
 </html>
