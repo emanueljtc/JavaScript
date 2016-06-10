@@ -5,7 +5,7 @@
     <title>Document Object Model</title>
   </head>
   <body>
-      <ol>
+      <ol id="lista">
           <li>Lorem ipsum dolor sit ammet</li>
           <li>Asperiores ad, quam unde, Fuga.</li>
       </ol>
@@ -13,7 +13,10 @@
               var elemento = document.createElement("li");
                   var contenido = document.createTextNode("Nuevo Texto");
               elemento.appendChild(contenido);
-              document.body.appendChild(elemento);
+
+              var padre = document.getElementsByTagName("li")[0].parentNode,//obteniendo elemento padre desde elemento hijo
+                  primerElemento = document.getElementsByTagName("li")[1];
+              padre.insertBefore(elemento, primerElemento);
       </script>
   </body>
 </html>
