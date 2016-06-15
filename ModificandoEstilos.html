@@ -8,7 +8,7 @@
           width: 200px;
           transition: 300ms all ease;
         }
-        .grade{
+        .grande{
           width: 400px;
         }
         .titulo{
@@ -22,13 +22,30 @@
     </style>
   </head>
   <body>
-      <h1 id="encabezado" class="titulo tituloGrande">Soy un encabezado\^.^/</h1>
+      <!--PARTE 1-->
+      <!-- <h1 id="encabezado" class="titulo tituloGrande">Soy un encabezado\^.^/</h1>
       <script>
           var encabezado = document.getElementById("encabezado");
           //encabezado.className = encabezado.className.replace("tituloGrande", "");
           encabezado.style.background = "navy";
           encabezado.style.color = "#fff";
           // encabezado.style.fontFamily ="40px";
+      </script> -->
+      <form action="">
+          <input type="button" value="Cambio de Tamaño" onclick="zoom();">
+      </form>
+      <img id="thumb" class="thumb" src="http://lorempixel.com/400/400/" width="400"alt="">
+      <script>
+            var zoom = function() {
+                var thumb = document.getElementById("thumb");
+
+                if(thumb.className == "thumb"){
+                    thumb.className = "thumb grande";
+                }else {
+                  thumb.className = "thumb";
+                }
+            }
       </script>
+
   </body>
 </html>
