@@ -6,15 +6,22 @@
   </head>
   <body>
     <form action="" name="formulario" method="get">
-      <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Nombre:">
+      <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Nombre:" required>
       <br>
-      <input type="radio" name="sexo" id="hombre" value="Hombre">Hombre
-      <input type="radio" name="sexo" id="mujer" value="Mujer">Mujer
+      <input type="radio" name="sexo" id="hombre" value="Hombre" required>Hombre
+      <input type="radio" name="sexo" id="mujer" value="Mujer" required>Mujer
       <br>
-      <input type="checkbox" name="terminos" id="terminos"> Terminos y Condiciones
+      <input type="checkbox" name="terminos" id="terminos" required> Terminos y Condiciones
       <br>
 
       <input type="submit" id="btn" name="btn" value="Enviar">
     </form>
+    <script>
+      (function(){
+          var formulario = document.getElementByName('formulario')[0];
+              elementos = formulario.elements;
+              boton = document.getElemenById();
+      }())
+    </script>
   </body>
 </html>
