@@ -9,10 +9,15 @@
   </body>
   <script>
       //Timeout
+        (function(){
           var saludo = function(){
-              
+                alert('Saludo!');
 
+                //setTimeout(saludo, 3000);
             // Interval
-          }
+            setInterval(saludo, 3000);
+          };
+
+        }())
   </script>
 </html>
