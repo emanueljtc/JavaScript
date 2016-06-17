@@ -15,13 +15,14 @@
                 contador++;
                 alert("Saludos");
                 //console.log(contador);
-                if (contador === 1){
-                  clearInterval(intervalo);
-                }
+                 if (contador === 1){
+                   clearInterval(intervalo);
+                 }
+                //setTimeout(saludo, 1000);
 
           };
+          //saludo();
           // Interval
-          //setTimeout(saludo, 3000);
           var intervalo = setInterval(saludo, 3000);
 
         }())
