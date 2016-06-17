@@ -10,13 +10,19 @@
   <script>
       //Timeout
         (function(){
+          var contador = 0;
           var saludo = function(){
-                alert('Saludo!');
+                contador++;
+                alert("Saludos");
+                //console.log(contador);
+                if (contador === 1){
+                  clearInterval(intervalo);
+                }
 
-                //setTimeout(saludo, 3000);
-            // Interval
-            setInterval(saludo, 3000);
           };
+          // Interval
+          //setTimeout(saludo, 3000);
+          var intervalo = setInterval(saludo, 3000);
 
         }())
   </script>
