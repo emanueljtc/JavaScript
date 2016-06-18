@@ -5,17 +5,19 @@
     <title>Selectores Jquery</title>
     <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
     <script>
+        var seleccion;
       $(document).on("ready", function(){
           //$('div.miDiv article p').text("Hola Selectores avanzados");
           //$('#parrafoUno, #parrafoDos, span').text('Hey Somos Iguales');
-          var seleccion = $('.ejemp1');
-          if(seleccion.length)
-            console.log('Existen:' + seleccion.length)
-          else
-            console.log('No Existe el elemento seleccionado');
-          //seleccion.not('.cl1').text('Este elemento no tiene la clase cl1');
-          //seleccion.has('p').text('Este elemento tiene un <p> en su contenido');
-          $('li').first().html('<strong>Soy el Elemento 1</strong>');
+          seleccion = $('.ejemp1');
+              if(seleccion.length)
+                console.log('Existen:' + seleccion.length)
+              else
+                console.log('No Existe el elemento seleccionado');
+              //seleccion.not('.cl1').text('Este elemento no tiene la clase cl1');
+              //seleccion.has('p').text('Este elemento tiene un <p> en su contenido');
+              $('li').first().html('<strong>Soy el Elemento 1</strong>');
+              $('li').eq(2).text('Soy el Elemento Numero 3');
       });
 
     </script>
@@ -40,6 +42,8 @@
         <span></span>
     </div>
     <ul>
+      <li></li>
+      <li></li>
       <li></li>
       <li></li>
       <li></li>
