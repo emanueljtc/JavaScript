@@ -9,7 +9,13 @@
       $(document).on('ready', function(){
         //var almacen = $('#parrafo').html();
         //alert(almacen);
-        $('#prueba').attr("class", "ejemplo"); //metodo para acceder a cualquier extructura del html
+        //Este metodo ASIGNA un VALOR
+            $('#prueba').attr("class", "ejemplo");
+        //Este metodo sirve para OBTENER el id
+            var clase = $('#prueba').attr('id');
+            alert(clase);
+
+
       });
 
     </script>
