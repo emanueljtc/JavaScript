@@ -3,18 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>Selectores Jquery</title>
-    <script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
     <script>
       $(document).on("ready", function(){
           //$('div.miDiv article p').text("Hola Selectores avanzados");
-
-          $('#parrafoUno, #parrafoDos, span').text('Hey Somos Iguales');
+          //$('#parrafoUno, #parrafoDos, span').text('Hey Somos Iguales');
+          var seleccion = $('.ejemp1');
+          if(seleccion.length)
+            console.log('Existen:' + seleccion.length)
+          else
+            console.log('No Existe el elemento seleccionado');
+          //seleccion.not('.cl1').text('Este elemento no tiene la clase cl1');
+          seleccion.has('p').text('Este elemento tiene un <p> en su contenido');
       });
 
     </script>
   </head>
   <body>
-    <div class='miDiv'>
+    <!-- <div class='miDiv'>
         <article>
           <p id="parrafoUno">Esto es Jquery</p>
         </article>
@@ -25,7 +31,17 @@
       <article>
         <p id="parrafoDos">Curso de Codigo Facilito</p>
       </article>
+    </div> -->
+    <div class="ejemp1 cl1">
+      <p></p>
     </div>
-
+    <div class="ejemp1">
+        <span></span>
+    </div>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
   </body>
 </html>
