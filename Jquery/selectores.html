@@ -5,10 +5,10 @@
     <title>Selectores Jquery</title>
     <script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script>
-      $(document).on('ready', function(){
-        $('div.miDiv article p').text("Hola Selectores");
+      $(document).on("ready", function(){
+          //$('div.miDiv article p').text("Hola Selectores avanzados");
 
-
+          $('#parrafoUno, #parrafoDos, span').text('Hey Somos Iguales');
       });
 
     </script>
@@ -16,13 +16,14 @@
   <body>
     <div class='miDiv'>
         <article>
-          <p>Esto es Jquery</p>
+          <p id="parrafoUno">Esto es Jquery</p>
         </article>
 
-    <div>
+    </div>
+    <span></span>
     <div>
       <article>
-        <p>Curso de Codigo Facilito</p>
+        <p id="parrafoDos">Curso de Codigo Facilito</p>
       </article>
     </div>
 
