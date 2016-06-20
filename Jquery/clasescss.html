@@ -11,11 +11,18 @@
     </style>
     <script>
       $(document).on("ready", function(){
-        
+        $(document).on("click",function(){
+          $('#test').removeClass("test");
+        })
+        // $(document).on("click",function(){
+        //   $('#test').addClass("test");
+        // })
       })
     </script>
   </head>
   <body>
-    <div id='test'>Click On Me </div>
+
+    <br>
+    <div id='test' class="test">Click On Me</div>
   </body>
 </html>
