@@ -13,12 +13,17 @@
             'color':'red'
           }
           $('h1').css(cssH1);
+          var bgItem2 = $('#item2').css('background-color');
+          var cItem2 = $('item2').css('color');
+
+          if(bgItem2 === cItem2)
+            $('#item2').css('color','#FFF');
       });
     </script>
     <style>
       body,html{
         background: #CCC;
-        color: #000;
+        color: red;
         font-family: Arial;
         margin:0;
         padding: 0;
