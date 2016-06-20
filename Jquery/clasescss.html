@@ -23,6 +23,12 @@
         //toggle AÑADE y REMUEVE LA CLASE
             $(document).on("click",function(){
             $('#test').toggleClass("test");
+            if($('#test').hasClass("test")){
+                $("#test").text('Hey Soy Rojito PSUV');
+            }
+            else{
+                $("#test").text('Maldito Maduro ahora soy ADECO');
+            }
           })
       })
     </script>
