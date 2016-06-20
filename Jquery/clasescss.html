@@ -10,19 +10,26 @@
         }
     </style>
     <script>
+
       $(document).on("ready", function(){
-        $(document).on("click",function(){
-          $('#test').removeClass("test");
-        })
+        //remove REMUEVE la clase
+        //$(document).on("click",function(){
+          //$('#test').removeClass("test");
+        //})
+        //add AÑADE LA CLASE
         // $(document).on("click",function(){
         //   $('#test').addClass("test");
         // })
+        //toggle AÑADE y REMUEVE LA CLASE
+            $(document).on("click",function(){
+            $('#test').toggleClass("test");
+          })
       })
     </script>
   </head>
   <body>
 
     <br>
-    <div id='test' class="test">Click On Me</div>
+    <div id='test'>Click On Me</div>
   </body>
 </html>
