@@ -6,7 +6,10 @@
     <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
     <script>
       $(document).on("ready",function() {
-          console.log($('header img').width());
+          console.log($('header img').width()); //SABER DIMENSIONES
+
+          var pos = $('#e2 p').position();
+          console.log('Posicion Left: ' + pos.left + 'Posicion Top ' + pos.top);
       });
     </script>
     <style>
