@@ -4,22 +4,29 @@
     <meta charset="utf-8">
     <title>Dimensiones JQuery</title>
     <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-    
+    <script>
+      $(document).on("ready",function() {
+          console.log($('header img').width());
+      });
+    </script>
     <style>
       body,html{
         background: #000;
         margin: 0;
         padding: 0;
       }
-      header{  <style>
+      header{
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 365px;
+      }
       #e2{
         padding: 15px;
         border:
       }
       p{
         margin-left: 10px;
-      }
-    </style>
         display: block;
         margin: 0;
         padding: 0;
@@ -37,7 +44,7 @@
       }
       #e2{
         padding: 15px;
-        border:
+        border-radius: 60px 0 60px 0;
       }
       p{
         margin-left: 10px;
@@ -46,7 +53,7 @@
   </head>
   <body>
       <header>
-        <img src="../img/flisol.jpg" alt="CP"
+        <img src="../Jquery/img/cakephp2.png" alt="CP"/>
       </header>
       <div id="e1">
       </div>
