@@ -7,8 +7,11 @@
       <script>
         $(document).on("ready", function(){
             $('button').on('click', function(){
-              //FUNCTION MOVER ELEMENTOS
-              $('ol li:first').appendTo('ol:first');
+              //FUNCION MOVER ELEMENTO PRINCIPAL AL FINAL
+              //$('ol li:first').appendTo('ol:first');
+              //FUNCTION MOVER ELEMENTO FINAL AL PRINCIO
+              $('ol li:last').prependTo('ol:first');
+
             })
         });
       </script>
