@@ -8,9 +8,16 @@
       $(document).on("ready", function(){
           //var clase = $('#prueba').attr('class'); //OBTENER UN VALOR DE PARAMETRO
           //$('#prueba').attr('class','cambieLaClase'); //CAMBIO DE PARAMETRO
-          $('#prueba').removeAttr('class'); //REMOVER PARAMETRO
-          var clase = $('#prueba').attr('class');
-          alert(clase);
+          //$('#prueba').removeAttr('class'); //REMOVER PARAMETRO
+          //var clase = $('#prueba').attr('class');
+          //alert(clase);
+          // FUNCION DE PREVENCION DE REDIRECCIONADO
+          $('a').on("click",function(e){
+            e.preventDefault();
+            var link = $(this).attr('href');
+            alert("Usted esta Saliendo de nuestro sitio");
+            location.href = link;
+          });
       });
     </script>
   </head>
