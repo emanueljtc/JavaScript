@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Metodo Attr Jquery</title>
-    <script src="http://code.jquery.com/jquery-1.7.2.min.js" />
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
     <script>
       $(document).on("ready", function(){
-
+          var clase = $('#prueba').attr('class');
+          alert(clase);
       });
     </script>
   </head>
@@ -16,6 +17,6 @@
     <form>
       <input type=''>
       <input type='Submit'>
-   </form> 
+   </form>
   </body>
 </html>
