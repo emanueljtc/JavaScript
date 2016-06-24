@@ -8,13 +8,28 @@
         $(document).on("ready", function(){
             $('button').on('click', function(){
               //FUNCION MOVER ELEMENTO PRINCIPAL AL FINAL
-              //$('ol li:first').appendTo('ol:first');
+                //$('ol li:first').appendTo('ol:first');
+
               //FUNCTION MOVER ELEMENTO FINAL AL PRINCIO
-              //$('ol li:last').prependTo('ol:first');
+                //$('ol li:last').prependTo('ol:first');
 
-              $('ol li:first').insertAfter('#e1');
+              //INSERTAR DESPUES DE DESTINO
+                  //MODO I
+                    //$('ol li:first').insertAfter('#e1');
+                  //MODO II
+                    //$('#e1').after($('ol li:first'));
 
-
+              //INSERTAR ANTES DEL DESTINO
+                //MODO I
+                    //$('ol li:first').insertBefore('#e1');
+                //MODO II
+                      //$('#e1').before($('ol li:first'));
+              //CLONAR ELEMENTOS ANTES DEL DESTINO
+                //var clon = $('ol li:first').clone();
+                //$('#e1').before(clon);
+              //CLONAR ELEMENTOS DESPUES DEL DESTINO
+                var clon = $('ol li:first').clone();
+                $('#e1').after(clon);
             })
         });
       </script>
