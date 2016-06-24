@@ -24,13 +24,25 @@
                     //$('ol li:first').insertBefore('#e1');
                 //MODO II
                       //$('#e1').before($('ol li:first'));
+
               //CLONAR ELEMENTOS ANTES DEL DESTINO
                 //var clon = $('ol li:first').clone();
                 //$('#e1').before(clon);
               //CLONAR ELEMENTOS DESPUES DEL DESTINO
-                var clon = $('ol li:first').clone();
-                $('#e1').after(clon);
-            })
+                //var clon = $('ol li:first').clone();
+                //$('#e1').after(clon);
+
+              //CREAR NUEVO ELEMENTO
+                //var nuevo_e = $('<p>Hola Niño</p>');
+                //$('#e1').append(nuevo_e);
+
+              //REMOVER ELEMENTOS
+                //REMOVER PRIMER ELEMENTO
+                  //$('ol li:first').remove();
+                //REMOVER ULTIMO ELEMENTO
+                  $('ol li:last').remove();
+
+              })
         });
       </script>
       <style>
