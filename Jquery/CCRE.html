@@ -5,7 +5,12 @@
     <title>CCRE</title>
       <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
       <script>
-        
+        $(document).on("ready", function(){
+            $('button').on('click', function(){
+              //FUNCTION MOVER ELEMENTOS
+              $('ol li:first').appendTo('ol:first');
+            })
+        });
       </script>
       <style>
       body,html{
